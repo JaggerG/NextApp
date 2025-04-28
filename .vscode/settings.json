@@ -1,5 +1,11 @@
 {
     "WillLuke.nextjs.addTypesOnSave": true,
     "WillLuke.nextjs.hasPrompted": true,
-    "Codegeex.RepoIndex": true
+    "Codegeex.RepoIndex": true,
+    "mdb.presetConnections": [
+        {
+            "name": "Preset Connection",
+            "connectionString": "mongodb://localhost:27017"
+        }
+    ]
 }

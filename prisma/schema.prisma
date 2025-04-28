@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
+  url      = "mongodb+srv://django970520:hAc2GP8PxbA8kWo1@mongostudy.oxpxxf9.mongodb.net/next_app?retryWrites=true&w=majority&appName=MongoStudy"
 }
 
 model Account {
