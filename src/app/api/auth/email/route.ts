@@ -3,9 +3,13 @@ import { sendEmail } from "@/lib/email";
 
 export const POST = async (req: Request) => {
     const res = await req.json();
-    const data = res.payload;
+    const data = {
+        to: res.data.email,
+        subject: 'serverComponent',
+        text: 'serverComponent'
+    }
     try {
-        await sendEmail({...data});
+        await sendEmail(data);
         return new Response('Email sent successfully');
     } catch (error) {
         console.log(error);

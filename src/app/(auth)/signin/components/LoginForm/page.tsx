@@ -25,9 +25,8 @@ const LoginForm = () => {
         const res = await axios.post('/api/auth/email', {
             method: 'POST',
             data:{
-                to: '1028286644@qq.com',
-                subject: 'serverComponent',
-                text: 'serverComponent'
+                to: formData.email,
+                password: formData.password,
             }
         })
         console.log(res.data);
@@ -77,7 +76,6 @@ const LoginForm = () => {
             </form>
         </div>
         </>
-
     )
 }
 export default LoginForm;
