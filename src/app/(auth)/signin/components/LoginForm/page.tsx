@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react'
 import { sendEmail } from '@/lib/email'
-import EmailBtn from './EmailBtn'
 import axios from 'axios'
 type Form = {
     email: string,
